@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Barada Homes | Real Estate &amp; Property Management Thailand</title>
+<meta name="description" content="Barada Homes is a Thailand-focused real estate and property management company. Homes to live in, properties to invest in, places to belong. Pattaya and Krabi.">
+<link rel="canonical" href="https://baradahomes.com/">
+<meta property="og:title" content="Barada Homes | Real Estate &amp; Property Management Thailand">
+<meta property="og:description" content="Homes to live in. Properties to invest in. Places to belong.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://baradahomes.com/">
+<meta property="og:site_name" content="Barada Homes">
+<meta property="og:image" content="https://baradahomes.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://baradahomes.com/og-image.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0F2E25">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#0F2E25;
+  --forest-deep:#0A211B;
+  --forest-raise:#153A2E;
+  --cream:#F2EADA;
+  --cream-60:rgba(242,234,218,.60);
+  --cream-40:rgba(242,234,218,.40);
+  --coral:#E3603A;
+  --coral-lift:#EE7550;
+  --line:rgba(242,234,218,.15);
+  --line-soft:rgba(242,234,218,.08);
+  --arch:44% 44% 3px 3px / 21% 21% 2px 2px;
+  --pad:clamp(20px,5vw,72px);
+  --sans:'Outfit',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --ar:'IBM Plex Sans Arabic','Outfit',system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--forest);color:var(--cream);
+  font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.65;
+  overflow-x:hidden;
+}
+html[dir="rtl"] body{font-family:var(--ar);font-weight:300}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--coral);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-weight:300;letter-spacing:-.03em;line-height:.98;margin:0}
+html[dir="rtl"] h1,html[dir="rtl"] h2,html[dir="rtl"] h3{letter-spacing:0;line-height:1.25;font-weight:400}
+p{margin:0}
+.wrap{padding-inline:var(--pad);max-width:1560px;margin-inline:auto}
+.sec{padding-block:clamp(72px,11vw,160px)}
+.rule{height:1px;background:var(--line);border:0;margin:0}
+
+/* ---------- header ---------- */
+.hdr{
+  position:fixed;inset-block-start:0;inset-inline:0;z-index:60;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:14px var(--pad);
+  background:rgba(15,46,37,.72);backdrop-filter:blur(14px);
+  border-block-end:1px solid var(--line-soft);
+}
+.brand{display:flex;align-items:center;gap:11px}
+.brand svg{width:34px;height:34px;flex:none}
+.brand .wm{display:flex;flex-direction:column;line-height:1}
+.brand .wm b{font-weight:300;font-size:15px;letter-spacing:.30em}
+.brand .wm i{font-style:normal;font-size:8.5px;letter-spacing:.44em;color:var(--cream-60);margin-block-start:3px}
+html[dir="rtl"] .brand .wm b{letter-spacing:.04em;font-size:17px}
+html[dir="rtl"] .brand .wm i{letter-spacing:.14em;font-size:10px}
+.hdr-r{display:flex;align-items:center;gap:clamp(12px,2vw,26px)}
+.lang{display:flex;align-items:center;gap:2px;font-size:12px;letter-spacing:.14em}
+.lang button{padding:5px 7px;color:var(--cream-40);transition:color .18s}
+.lang button.on{color:var(--cream)}
+.lang button:hover{color:var(--coral-lift)}
+.lang span{color:var(--cream-40)}
+.burger{display:flex;align-items:center;gap:11px;padding:7px 2px;font-size:12px;letter-spacing:.18em}
+.burger .bars{display:grid;gap:4px;width:22px}
+.burger .bars i{display:block;height:1.5px;background:var(--cream);transition:transform .3s,opacity .2s}
+.burger[aria-expanded="true"] .bars i:nth-child(1){transform:translateY(5.5px) rotate(45deg)}
+.burger[aria-expanded="true"] .bars i:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] .bars i:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
+.burger .txt{display:none}
+@media(min-width:700px){.burger .txt{display:inline}}
+
+/* ---------- menu overlay ---------- */
+.menu{
+  position:fixed;inset:0;z-index:55;background:var(--forest-deep);
+  display:flex;flex-direction:column;justify-content:center;
+  padding:96px var(--pad) var(--pad);
+  clip-path:inset(0 0 100% 0);transition:clip-path .5s cubic-bezier(.7,0,.2,1);
+  visibility:hidden;
+}
+.menu.open{clip-path:inset(0 0 0 0);visibility:visible}
+.menu a{
+  display:block;font-size:clamp(2.4rem,8vw,5.2rem);letter-spacing:-.035em;
+  padding-block:clamp(8px,1.6vw,18px);color:var(--cream);transition:color .2s;
+}
+html[dir="rtl"] .menu a{letter-spacing:0}
+.menu a:hover{color:var(--coral)}
+.menu .foot{margin-block-start:clamp(28px,5vw,60px);color:var(--cream-60);font-size:14px;display:flex;flex-wrap:wrap;gap:22px}
+.menu .foot a{font-size:14px;letter-spacing:.06em}
+
+/* ---------- hero ---------- */
+.hero{padding-block:96px 0}
+.hero-arch{
+  position:relative;overflow:hidden;border-radius:var(--arch);
+  aspect-ratio:16/9;max-height:calc(100vh - 132px);min-height:430px;background:var(--forest-raise);
+}
+@media(max-width:760px){.hero-arch{aspect-ratio:5/7;max-height:none;min-height:0}}
+.hero-arch>img{width:100%;height:100%;object-fit:cover;transform:scale(1.04)}
+.hero-arch::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(10,33,27,.45) 0%,rgba(10,33,27,.04) 26%,rgba(10,33,27,.52) 56%,rgba(10,33,27,.95) 100%);
+}
+@media(max-width:760px){
+  .hero-arch::after{background:linear-gradient(180deg,rgba(10,33,27,.45) 0%,rgba(10,33,27,.06) 20%,rgba(10,33,27,.72) 48%,rgba(10,33,27,.97) 100%)}
+}
+.hero-copy{
+  position:absolute;inset-block-end:0;inset-inline:0;z-index:2;
+  padding:clamp(22px,4vw,54px);
+  display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:clamp(16px,3vw,40px);
+}
+.hero-copy>div:first-child{flex:1 1 420px}
+.hero-cta{flex:0 1 auto}
+.hero h1{font-size:clamp(2.35rem,7.2vw,5.8rem);font-weight:200;max-width:14ch;text-shadow:0 2px 26px rgba(10,33,27,.5)}
+html[dir="rtl"] .hero h1{font-weight:400;max-width:16ch}
+.hero .sub{margin-block-start:16px;font-size:clamp(15px,1.5vw,19px);color:var(--cream);max-width:44ch;text-wrap:balance}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:14px 26px;border-radius:2px;font-size:14px;letter-spacing:.03em;font-weight:400;
+  background:var(--coral);color:#fff;transition:background .2s,transform .2s;
+}
+.btn:hover{background:var(--coral-lift)}
+.btn:active{transform:translateY(1px)}
+.btn.ghost{background:transparent;color:var(--cream);border:1px solid var(--line);}
+.btn.ghost:hover{border-color:var(--cream);background:rgba(242,234,218,.06)}
+.btn.cream{background:var(--cream);color:var(--forest)}
+.btn.cream:hover{background:#fff}
+.btn .ar-mark{display:inline-block;font-size:15px;line-height:1;flex:none}
+html[dir="rtl"] .btn .chev{transform:scaleX(-1)}
+
+/* ---------- section heads ---------- */
+.head{max-width:22ch;font-size:clamp(2rem,5.2vw,4.2rem);font-weight:200}
+html[dir="rtl"] .head{font-weight:400}
+.lede{margin-block-start:22px;max-width:56ch;color:var(--cream-60);font-size:clamp(16px,1.6vw,19px)}
+.two{display:grid;gap:clamp(26px,4vw,72px);grid-template-columns:1fr}
+@media(min-width:900px){.two{grid-template-columns:1.05fr 1fr;align-items:start}}
+
+/* ---------- about ---------- */
+.about{background:var(--forest-deep)}
+.about .quote{
+  border-inline-start:2px solid var(--coral);padding-inline-start:22px;
+  font-size:clamp(18px,2vw,24px);line-height:1.45;font-weight:300;margin-block-start:8px;
+}
+
+/* ---------- pillars ---------- */
+.pillars{display:grid;gap:1px;background:var(--line-soft);margin-block-start:clamp(40px,5vw,72px)}
+@media(min-width:640px){.pillars{grid-template-columns:1fr 1fr}}
+@media(min-width:1080px){.pillars.four{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:1080px){.pillars.three{grid-template-columns:repeat(3,1fr)}}
+.pillar{background:var(--forest);padding:clamp(26px,3vw,40px) clamp(20px,2.4vw,34px)}
+.about .pillar{background:var(--forest-deep)}
+.pillar h3{font-size:clamp(1.3rem,2.2vw,1.9rem);font-weight:300}
+.pillar h3::before{
+  content:"";display:block;width:26px;height:2px;background:var(--coral);margin-block-end:18px;
+}
+.pillar p{margin-block-start:12px;color:var(--cream-60);font-size:16px;max-width:34ch}
+
+/* ---------- carousel ---------- */
+.units-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px}
+.caro-nav{display:flex;align-items:center;gap:16px;font-size:13px;letter-spacing:.16em;color:var(--cream-60)}
+.caro-nav button{width:46px;height:46px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;transition:border-color .2s,background .2s}
+.caro-nav button:hover:not(:disabled){border-color:var(--cream);background:rgba(242,234,218,.06)}
+.caro-nav button:disabled{opacity:.32;cursor:default}
+.caro-nav .count{direction:ltr;unicode-bidi:isolate}
+.caro-nav .count b{color:var(--cream);font-weight:400}
+html[dir="rtl"] .caro-nav svg{transform:scaleX(-1)}
+.caro{
+  margin-block-start:clamp(28px,4vw,52px);
+  display:flex;gap:clamp(14px,2vw,28px);
+  overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
+  padding-inline:var(--pad);
+  padding-block-end:6px;
+}
+.caro::-webkit-scrollbar{display:none}
+.card{
+  flex:0 0 88%;scroll-snap-align:start;text-align:start;
+  background:var(--forest-deep);border:1px solid var(--line-soft);
+  display:flex;flex-direction:column;
+}
+@media(min-width:720px){.card{flex-basis:56%}}
+@media(min-width:1200px){.card{flex-basis:44%}}
+.card-img{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--forest-raise)}
+@media(min-width:720px){.card-img{aspect-ratio:3/2}}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.card:hover .card-img img{transform:scale(1.045)}
+.status{
+  position:absolute;inset-block-start:14px;inset-inline-start:14px;
+  padding:6px 12px;font-size:11px;letter-spacing:.14em;
+  background:rgba(10,33,27,.82);backdrop-filter:blur(6px);border:1px solid var(--line);
+}
+.status.live{border-color:var(--coral);color:var(--coral-lift)}
+.card-body{padding:clamp(20px,2.4vw,32px);display:flex;flex-direction:column;gap:14px;flex:1}
+.card-body h3{font-size:clamp(1.35rem,2.4vw,2rem);font-weight:300}
+.loc{color:var(--cream-60);font-size:14.5px;margin-block-start:6px}
+.specs{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px;color:var(--cream-60);border-block:1px solid var(--line-soft);padding-block:14px}
+.specs b{font-weight:400;color:var(--cream)}
+.price{font-size:clamp(1.1rem,1.8vw,1.5rem);font-weight:300}
+.price small{display:block;font-size:13px;color:var(--cream-60);margin-block-start:2px}
+.card-cta{display:flex;flex-wrap:wrap;gap:10px;margin-block-start:auto;padding-block-start:6px}
+.card-cta .btn{padding:12px 20px;font-size:13px}
+
+/* ---------- detail modal ---------- */
+.modal{position:fixed;inset:0;z-index:80;display:none}
+.modal.open{display:block}
+.modal-bg{position:absolute;inset:0;background:rgba(6,20,16,.86);backdrop-filter:blur(5px)}
+.sheet{
+  position:absolute;inset-block:0;inset-inline-end:0;width:min(1080px,100%);
+  background:var(--forest);overflow-y:auto;overscroll-behavior:contain;
+  transform:translateX(4%);opacity:0;transition:transform .38s cubic-bezier(.4,0,.2,1),opacity .3s;
+}
+html[dir="rtl"] .sheet{transform:translateX(-4%)}
+.modal.open .sheet{transform:none;opacity:1}
+.sheet-bar{
+  position:sticky;inset-block-start:0;z-index:3;display:flex;justify-content:space-between;align-items:center;gap:16px;
+  padding:14px clamp(18px,3vw,40px);background:rgba(15,46,37,.9);backdrop-filter:blur(12px);
+  border-block-end:1px solid var(--line-soft);
+}
+.sheet-bar h2{font-size:clamp(1.1rem,2vw,1.5rem);font-weight:300}
+.x{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;flex:none}
+.x:hover{border-color:var(--cream)}
+.sheet-in{padding:clamp(18px,3vw,40px);display:grid;gap:clamp(28px,4vw,52px)}
+.gal-main{aspect-ratio:3/2;overflow:hidden;background:var(--forest-raise)}
+.gal-main img{width:100%;height:100%;object-fit:cover}
+.thumbs{display:flex;gap:8px;overflow-x:auto;margin-block-start:8px;scrollbar-width:none;padding-block-end:2px}
+.thumbs::-webkit-scrollbar{display:none}
+.thumbs button{flex:0 0 92px;aspect-ratio:4/3;overflow:hidden;opacity:.42;transition:opacity .2s;border:1px solid transparent}
+.thumbs button.on{opacity:1;border-color:var(--coral)}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.dl{display:grid;gap:1px;background:var(--line-soft);border-block:1px solid var(--line-soft)}
+@media(min-width:620px){.dl{grid-template-columns:repeat(3,1fr)}}
+.dl div{background:var(--forest);padding:18px 20px}
+.dl dt{font-size:12.5px;letter-spacing:.1em;color:var(--cream-40);margin-block-end:6px}
+.dl dd{margin:0;font-size:17px}
+.blk h3{font-size:clamp(1.2rem,2vw,1.6rem);font-weight:300;margin-block-end:16px}
+.feats{list-style:none;margin:0;padding:0;display:grid;gap:10px 28px;font-size:16px;color:var(--cream-60)}
+@media(min-width:620px){.feats{grid-template-columns:1fr 1fr}}
+.feats li{display:flex;gap:11px;align-items:baseline}
+.feats li::before{content:"";width:5px;height:5px;background:var(--coral);flex:none;transform:translateY(-3px)}
+.ar-panel{border:1px solid var(--line);padding:clamp(22px,3vw,34px);display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+.ar-panel p{color:var(--cream-60);max-width:44ch;margin-block-start:8px;font-size:15px}
+.sheet-foot{display:flex;flex-wrap:wrap;gap:12px}
+
+/* ---------- why / rooted ---------- */
+.why{background:var(--forest-deep)}
+.rooted-grid{display:grid;gap:clamp(26px,4vw,56px);align-items:center;grid-template-columns:1fr}
+@media(min-width:900px){.rooted-grid{grid-template-columns:.95fr 1.05fr}}
+.rooted-arch{border-radius:var(--arch);overflow:hidden;aspect-ratio:4/5;max-height:640px;background:var(--forest-raise)}
+.rooted-arch img{width:100%;height:100%;object-fit:cover}
+.places{display:flex;flex-wrap:wrap;gap:10px;margin-block-start:30px}
+.places span{border:1px solid var(--line);padding:9px 18px;font-size:14px;letter-spacing:.06em}
+.places span b{font-weight:400;color:var(--coral-lift)}
+
+/* ---------- services ---------- */
+.svc{display:grid;gap:1px;background:var(--line-soft);margin-block-start:clamp(36px,4vw,64px)}
+@media(min-width:600px){.svc{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.svc{grid-template-columns:repeat(3,1fr)}}
+.svc>div{background:var(--forest);padding:clamp(26px,3vw,42px);display:flex;align-items:baseline;justify-content:space-between;gap:16px;min-height:132px}
+.svc h3{font-size:clamp(1.15rem,1.9vw,1.5rem);font-weight:300;max-width:15ch}
+.soon{font-size:11px;letter-spacing:.14em;color:var(--coral-lift);border:1px solid rgba(227,96,58,.45);padding:5px 10px;white-space:nowrap;flex:none}
+
+/* ---------- welcome band ---------- */
+.band{background:var(--coral);color:#fff}
+.band .head{font-weight:300;max-width:20ch}
+.band .lede{color:rgba(255,255,255,.86)}
+
+/* ---------- owner cta ---------- */
+.owner{background:var(--forest-deep)}
+.owner .btns{display:flex;flex-wrap:wrap;gap:12px;margin-block-start:34px}
+
+/* ---------- contact ---------- */
+.form{display:grid;gap:18px}
+.f-row{display:grid;gap:18px}
+@media(min-width:680px){.f-row.two-up{grid-template-columns:1fr 1fr}}
+.field label{display:block;font-size:12.5px;letter-spacing:.1em;color:var(--cream-40);margin-block-end:8px}
+.field input,.field select,.field textarea{
+  width:100%;background:transparent;border:0;border-block-end:1px solid var(--line);
+  color:var(--cream);font:inherit;font-size:16px;padding:11px 2px;border-radius:0;
+  transition:border-color .2s;
+}
+.field textarea{resize:vertical;min-height:104px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--coral)}
+.field select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--cream-60) 50%),linear-gradient(135deg,var(--cream-60) 50%,transparent 50%);background-position:calc(100% - 14px) 22px,calc(100% - 8px) 22px;background-size:6px 6px;background-repeat:no-repeat}
+html[dir="rtl"] .field select{background-position:14px 22px,8px 22px;background-image:linear-gradient(135deg,var(--cream-60) 50%,transparent 50%),linear-gradient(45deg,transparent 50%,var(--cream-60) 50%)}
+.field select option{background:var(--forest-deep);color:var(--cream)}
+.contact-side{border-inline-start:1px solid var(--line);padding-inline-start:clamp(24px,3vw,44px)}
+@media(max-width:899px){.contact-side{border-inline-start:0;padding-inline-start:0;border-block-start:1px solid var(--line);padding-block-start:32px}}
+.contact-side a.line{display:flex;align-items:center;gap:12px;padding-block:14px;border-block-end:1px solid var(--line-soft);font-size:16px}
+.contact-side a.line:hover{color:var(--coral-lift)}
+.contact-side svg{width:19px;height:19px;flex:none;opacity:.8}
+.note{font-size:13.5px;color:var(--cream-40);margin-block-start:14px}
+
+/* ---------- footer ---------- */
+.ftr{background:var(--forest-deep);padding-block:clamp(46px,6vw,76px)}
+.ftr-grid{display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,64px);justify-content:space-between}
+.ftr-nav{display:flex;flex-direction:column;gap:11px;font-size:15px;color:var(--cream-60)}
+.ftr-nav a:hover{color:var(--cream)}
+.ftr-soc{display:flex;gap:12px}
+.ftr-soc a{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;transition:border-color .2s,color .2s}
+.ftr-soc a:hover{border-color:var(--coral);color:var(--coral-lift)}
+.ftr-btm{margin-block-start:clamp(34px,5vw,58px);padding-block-start:22px;border-block-start:1px solid var(--line-soft);display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;font-size:13.5px;color:var(--cream-40)}
+
+/* ---------- whatsapp fab ---------- */
+.fab{
+  position:fixed;inset-block-end:16px;inset-inline-end:16px;z-index:50;
+  display:flex;align-items:center;gap:9px;padding:12px 18px;border-radius:999px;
+  background:var(--cream);color:var(--forest);font-size:14px;
+  box-shadow:0 6px 22px rgba(6,20,16,.45);
+  transform:translateY(140%);transition:transform .35s cubic-bezier(.3,1.2,.5,1);
+}
+.fab.show{transform:none}
+.fab svg{width:19px;height:19px}
+@media(min-width:900px){.fab{display:none}}
+
+/* ---------- hero reveal (one orchestrated moment) ---------- */
+@keyframes riseIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes archOpen{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+.hero-arch{animation:archOpen .95s cubic-bezier(.7,0,.15,1) both}
+.hero h1{animation:riseIn .8s .45s cubic-bezier(.2,.7,.2,1) both}
+.hero .sub{animation:riseIn .8s .58s cubic-bezier(.2,.7,.2,1) both}
+.hero-cta{animation:riseIn .8s .7s cubic-bezier(.2,.7,.2,1) both}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+}
+[hidden]{display:none !important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr">
+  <a class="brand" href="#top" aria-label="Barada Homes">
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <path d="M5 32c4 3.4 7.2 2.4 11-2.6 6-8 11.6-15.4 16-15.4s10 7.4 16 15.4c3.8 5 7 6 11 2.6"
+            fill="none" stroke="#E3603A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="18" y="33" width="28" height="23" rx="3" fill="#F2EADA"/>
+      <circle cx="26" cy="41" r="2.7" fill="#0F2E25"/>
+      <circle cx="38" cy="41" r="2.7" fill="#0F2E25"/>
+      <path d="M27 56v-6.5a5 5 0 0 1 10 0V56z" fill="#0F2E25"/>
+    </svg>
+    <span class="wm"><b data-i="brandTop">BARADA</b><i data-i="brandBot">HOMES</i></span>
+  </a>
+  <div class="hdr-r">
+    <div class="lang" role="group" aria-label="Language">
+      <button id="btnEN" class="on" lang="en">EN</button><span>|</span><button id="btnAR" lang="ar">AR</button>
+    </div>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu">
+      <span class="txt" data-i="menu">MENU</span>
+      <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MENU ============ -->
+<nav class="menu" id="menu" aria-label="Main">
+  <a href="#about" data-i="navAbout">About us</a>
+  <a href="#units" data-i="navUnits">Available units</a>
+  <a href="#contact" data-i="navContact">Contact</a>
+  <div class="foot">
+    <a href="#" id="mWa" data-i="waShort">WhatsApp</a>
+    <a href="#" id="mIg">Instagram</a>
+    <a href="#" id="mMail">hello@baradahomes.com</a>
+  </div>
+</nav>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero wrap">
+  <div class="hero-arch">
+    <img id="heroImg" alt="" fetchpriority="high">
+    <div class="hero-copy">
+      <div>
+        <h1 data-i="heroH">Find your place.</h1>
+        <p class="sub" data-i="heroSub">Homes to live in. Properties to invest in. Places to belong.</p>
+      </div>
+      <div class="hero-cta">
+        <a class="btn cream" href="#units"><span data-i="heroCta">Explore our homes</span>
+          <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+        <a class="btn ghost" href="#contact" data-i="heroCta2">Get in touch</a>
+        <button class="btn" id="heroAr" hidden><span class="ar-mark">◎</span><span data-i="viewAr">View in AR</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about sec" id="about">
+  <div class="wrap two">
+    <h2 class="head" data-i="aboutH">More than a property.</h2>
+    <div>
+      <p class="lede" data-i="aboutP">Barada Homes is a Thailand-focused real estate and property management company built around finding, managing and creating better places to live, stay and invest.</p>
+      <p class="quote" data-i="aboutQ">From finding the right property to managing it day to day, Barada Homes brings property, hospitality and local expertise together under one roof.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="pillars four">
+      <div class="pillar"><h3 data-i="p1h">Find</h3><p data-i="p1p">Quality properties in locations with real potential.</p></div>
+      <div class="pillar"><h3 data-i="p2h">Manage</h3><p data-i="p2p">Professional, hands-on property management.</p></div>
+      <div class="pillar"><h3 data-i="p3h">Rent</h3><p data-i="p3p">Holiday and long-term rental solutions.</p></div>
+      <div class="pillar"><h3 data-i="p4h">Invest</h3><p data-i="p4p">Helping clients identify opportunities that make sense.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UNITS ============ -->
+<section class="sec" id="units">
+  <div class="wrap">
+    <div class="units-top">
+      <div>
+        <h2 class="head" data-i="unitsH">Available units</h2>
+        <p class="lede" data-i="unitsP">Explore our current homes and properties available for rent, stay or investment.</p>
+      </div>
+      <div class="caro-nav">
+        <button id="prev" aria-label="Previous property"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 19l-7-7 7-7"/></svg></button>
+        <span class="count"><b id="cIdx">01</b> / <span id="cTot">02</span></span>
+        <button id="next" aria-label="Next property"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="wrap" style="padding-inline:0">
+    <div class="caro" id="caro"></div>
+  </div>
+</section>
+
+<!-- ============ WHY ============ -->
+<section class="why sec">
+  <div class="wrap two">
+    <h2 class="head" data-i="whyH">We look after property like it's our own.</h2>
+    <p class="lede" data-i="whyP">Good property management is about more than collecting rent. It's about protecting the property, creating better guest experiences, solving problems quickly and making sure every home performs at its potential.</p>
+  </div>
+  <div class="wrap">
+    <div class="pillars three">
+      <div class="pillar"><h3 data-i="w1h">Local</h3><p data-i="w1p">Based in Thailand, with local relationships and on-the-ground understanding.</p></div>
+      <div class="pillar"><h3 data-i="w2h">Hands-on</h3><p data-i="w2p">We stay close to the properties we manage.</p></div>
+      <div class="pillar"><h3 data-i="w3h">Long-term</h3><p data-i="w3p">We build long-term relationships with owners, guests, tenants and partners.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="sec">
+  <div class="wrap">
+    <h2 class="head" data-i="svcH">What we do</h2>
+    <div class="svc">
+      <div><h3 data-i="s1">Property sales</h3></div>
+      <div><h3 data-i="s2">Property management</h3></div>
+      <div><h3 data-i="s3">Holiday rentals</h3></div>
+      <div><h3 data-i="s4">Long-term rentals</h3></div>
+      <div><h3 data-i="s5">Property investment</h3></div>
+      <div><h3 data-i="s6">Development</h3><span class="soon" data-i="soon">COMING SOON</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROOTED ============ -->
+<section class="why sec">
+  <div class="wrap rooted-grid">
+    <div class="rooted-arch"><img id="rootedImg" alt="" loading="lazy"></div>
+    <div>
+      <h2 class="head" data-i="rootH">Rooted in Thailand.</h2>
+      <p class="lede" data-i="rootP">Thailand is more than a destination. It's a place people choose to live, build businesses, invest and return to year after year.</p>
+      <p class="lede" data-i="rootP2">Barada Homes exists to connect people with the right properties and opportunities across Thailand.</p>
+      <div class="places">
+        <span data-i="plc1">Pattaya</span><span data-i="plc2">Krabi</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WELCOME BAND ============ -->
+<section class="band sec">
+  <div class="wrap two">
+    <h2 class="head" data-i="bandH">Thailand, open to you.</h2>
+    <p class="lede" data-i="bandP">From holiday homes to long-term investments, Barada Homes helps international clients navigate property in Thailand with local expertise and personal service.</p>
+  </div>
+</section>
+
+<!-- ============ OWNER CTA ============ -->
+<section class="owner sec">
+  <div class="wrap two">
+    <h2 class="head" data-i="ownH">Have a property?</h2>
+    <div>
+      <p class="lede" data-i="ownP">Whether you're looking to rent, sell, manage or maximise the potential of a property in Thailand, let's talk.</p>
+      <div class="btns">
+        <a class="btn" href="#contact"><span data-i="ownCta">Talk to Barada Homes</span>
+          <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn ghost" href="#contact" id="listBtn" data-i="ownCta2">List your property</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec" id="contact">
+  <div class="wrap">
+    <h2 class="head" data-i="conH">Let's talk property.</h2>
+    <div class="two" style="margin-block-start:clamp(34px,4vw,58px)">
+      <div class="form">
+        <div class="f-row two-up">
+          <div class="field"><label for="fName" data-i="fName">NAME</label><input id="fName" autocomplete="name"></div>
+          <div class="field"><label for="fMail" data-i="fMail">EMAIL</label><input id="fMail" type="email" autocomplete="email"></div>
+        </div>
+        <div class="f-row two-up">
+          <div class="field"><label for="fPhone" data-i="fPhone">PHONE</label><input id="fPhone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="fInt" data-i="fInt">I'M INTERESTED IN</label>
+            <select id="fInt">
+              <option value="buy" data-i="o1">Buying</option>
+              <option value="rent" data-i="o2">Renting</option>
+              <option value="manage" data-i="o3">Property management</option>
+              <option value="invest" data-i="o4">Investment</option>
+              <option value="list" data-i="o5">Listing my property</option>
+              <option value="other" data-i="o6">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="fMsg" data-i="fMsg">MESSAGE</label><textarea id="fMsg"></textarea></div>
+        <div>
+          <button class="btn" id="send"><span data-i="fSend">Send enquiry</span>
+            <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="note" data-i="fNote">Your enquiry opens in WhatsApp, ready to send.</p>
+        </div>
+      </div>
+      <div class="contact-side">
+        <a class="line" id="cWa" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.2 1.3-2 1.4-.5.1-1.2.1-3.4-.8-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.8-1c.2-.2.3-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.7-.1 1.4z"/></svg>
+          <span data-i="waLong">Chat with us on WhatsApp</span>
+        </a>
+        <a class="line" id="cMail" href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <span>hello@baradahomes.com</span>
+        </a>
+        <a class="line" id="cIg" href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+          <span>@baradahomes</span>
+        </a>
+        <p class="note" data-i="conNote">Based in Thailand. We reply in English, Arabic and Thai.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <div class="brand" style="margin-block-end:14px">
+          <svg viewBox="0 0 64 64" aria-hidden="true" style="width:40px;height:40px">
+            <path d="M5 32c4 3.4 7.2 2.4 11-2.6 6-8 11.6-15.4 16-15.4s10 7.4 16 15.4c3.8 5 7 6 11 2.6" fill="none" stroke="#E3603A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="18" y="33" width="28" height="23" rx="3" fill="#F2EADA"/>
+            <circle cx="26" cy="41" r="2.7" fill="#0A211B"/><circle cx="38" cy="41" r="2.7" fill="#0A211B"/>
+            <path d="M27 56v-6.5a5 5 0 0 1 10 0V56z" fill="#0A211B"/>
+          </svg>
+          <span class="wm"><b data-i="brandTop">BARADA</b><i data-i="brandBot">HOMES</i></span>
+        </div>
+        <p style="color:var(--cream-60);font-size:15px" data-i="ftrTag">Real estate &amp; property management</p>
+      </div>
+      <nav class="ftr-nav" aria-label="Footer">
+        <a href="#about" data-i="navAbout">About us</a>
+        <a href="#units" data-i="navUnits">Available units</a>
+        <a href="#contact" data-i="navContact">Contact</a>
+      </nav>
+      <div>
+        <div class="ftr-soc">
+          <a href="#" id="fIg" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" id="fWa" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.2 1.3-2 1.4-.5.1-1.2.1-3.4-.8-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.8-1c.2-.2.3-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.7-.1 1.4z"/></svg></a>
+        </div>
+        <p style="color:var(--cream-40);font-size:13.5px;margin-block-start:16px" data-i="partOf">Part of Barada Group</p>
+      </div>
+    </div>
+    <div class="ftr-btm">
+      <span>© <span id="yr"></span> Barada Homes</span>
+      <span data-i="ftrLoc">Pattaya · Krabi · Thailand</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" id="fab" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.2 1.3-2 1.4-.5.1-1.2.1-3.4-.8-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.8-1c.2-.2.3-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.7-.1 1.4z"/></svg><span data-i="waShort">WhatsApp</span></a>
+
+<!-- ============ PROPERTY MODAL ============ -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="modal-bg" data-close></div>
+  <div class="sheet" id="sheet">
+    <div class="sheet-bar">
+      <h2 id="mTitle"></h2>
+      <button class="x" data-close aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="sheet-in">
+      <div>
+        <div class="gal-main"><img id="galMain" alt=""></div>
+        <div class="thumbs" id="thumbs"></div>
+      </div>
+      <dl class="dl" id="mDl"></dl>
+      <div class="blk"><h3 data-i="dDesc">Description</h3><p id="mDesc" style="color:var(--cream-60);max-width:66ch"></p></div>
+      <div class="blk"><h3 data-i="dFeat">Features</h3><ul class="feats" id="mFeat"></ul></div>
+      <div class="ar-panel" id="mArPanel" hidden>
+        <div><h3 style="font-size:clamp(1.1rem,1.8vw,1.45rem);font-weight:300" data-i="dArH">View this property in AR</h3>
+        <p data-i="dArP">Open the model on your phone and place this property in your own space.</p></div>
+        <button class="btn" id="mArBtn"><span class="ar-mark">◎</span><span data-i="viewAr">View in AR</span></button>
+      </div>
+      <div class="sheet-foot">
+        <button class="btn" id="mEnq"><span data-i="dEnq">Enquire about this property</span></button>
+        <a class="btn ghost" id="mWaBtn" href="#" data-i="waShort">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* =========================================================================
+   BARADA HOMES — DATA LAYER
+   Everything editable lives here. Swap this object for a CMS/API response
+   (same field names) and nothing else in the page needs to change.
+   ========================================================================= */
+const SETTINGS = {
+  whatsapp: "66000000000",          // <-- put the real number here, digits only, country code first
+  email:    "hello@baradahomes.com",
+  instagram:"https://instagram.com/",
+  facebook: ""                       // leave empty to hide
+};
+
+const IMG = {
+  "r0": "assets/r0.webp",
+  "r1": "assets/r1.webp",
+  "r2": "assets/r2.webp",
+  "r3": "assets/r3.webp",
+  "r4": "assets/r4.webp",
+  "r5": "assets/r5.webp",
+  "r6": "assets/r6.webp",
+  "r7": "assets/r7.webp",
+  "r8": "assets/r8.webp",
+  "r9": "assets/r9.webp",
+  "r10": "assets/r10.webp",
+  "r11": "assets/r11.webp",
+  "r12": "assets/r12.webp",
+  "r13": "assets/r13.webp",
+  "r14": "assets/r14.webp",
+  "v0": "assets/v0.webp",
+  "v1": "assets/v1.webp",
+  "v2": "assets/v2.webp",
+  "v3": "assets/v3.webp",
+  "v4": "assets/v4.webp",
+  "v5": "assets/v5.webp",
+  "v6": "assets/v6.webp",
+  "v7": "assets/v7.webp",
+  "v8": "assets/v8.webp",
+  "v9": "assets/v9.webp",
+  "v10": "assets/v10.webp",
+  "v11": "assets/v11.webp",
+  "v12": "assets/v12.webp"
+};
+
+const PROPERTIES = [
+  {
+    id: "reflection-jomtien",
+    status: "available",
+    heroOnHomepage: true,
+    name:     { en: "Reflection Jomtien", ar: "ريفلكشن جومتيان" },
+    location: { en: "Jomtien, Pattaya", ar: "جومتيان، باتايا" },
+    type:     { en: "Condominium", ar: "شقة في برج سكني" },
+    size:     "217 m²",
+    beds: 3, baths: 5,
+    bedsLabel: { en: "3 bedrooms + nanny's room", ar: "٣ غرف نوم + غرفة مربية" },
+    price:    { en: "฿110,000 / month", ar: "١١٠٬٠٠٠ ฿ / شهرياً" },
+    priceNote:{ en: "Long-term rental", ar: "إيجار طويل الأمد" },
+    desc: {
+      en: "A spacious ocean-facing residence with panoramic front views, mountain views from the rear, two kitchens and generous indoor and outdoor living space.",
+      ar: "شقة واسعة تطل على البحر بإطلالات أمامية بانورامية وإطلالات جبلية من الخلف، مع مطبخين ومساحات معيشة داخلية وخارجية رحبة."
+    },
+    features: {
+      en: ["217 m² of living space","3 bedrooms plus a nanny's room","5 bathrooms","Two balconies","Ocean views to the front","Mountain views to the rear","Two kitchens","Pet friendly","10-storey building"],
+      ar: ["مساحة معيشة ٢١٧ م²","٣ غرف نوم بالإضافة إلى غرفة مربية","٥ حمامات","شرفتان","إطلالة على البحر من الأمام","إطلالة على الجبل من الخلف","مطبخان","مسموح بالحيوانات الأليفة","مبنى من ١٠ طوابق"]
+    },
+    cardImage: "r4",
+    gallery: ["r0","r1","r2","r3","r4","r5","r6","r7","r8","r9","r10","r11","r12","r13","r14"],
+    arEnabled: false,   // flip to true once a .glb model exists
+    arUrl: "",
+    arUrlIos: ""
+  },
+  {
+    id: "village-house",
+    status: "soon",
+    heroOnHomepage: false,
+    name:     { en: "Village House", ar: "منزل في مجمع سكني" },
+    location: { en: "Thailand", ar: "تايلاند" },
+    type:     { en: "Detached house, gated village", ar: "منزل مستقل ضمن مجمع مغلق" },
+    size:     null,
+    beds: null, baths: null,
+    bedsLabel: null,
+    price:    { en: "Price on request", ar: "السعر عند الطلب" },
+    priceNote:{ en: "Details being finalised", ar: "التفاصيل قيد الاستكمال" },
+    desc: {
+      en: "A fully furnished single-storey home in a gated village, with an open-plan living and dining area, a separate kitchen, and access to a large communal pool and residents' gym. Full specification and pricing to follow.",
+      ar: "منزل مفروش بالكامل من طابق واحد ضمن مجمع سكني مغلق، يضم صالة معيشة وطعام مفتوحة ومطبخاً منفصلاً، مع إمكانية استخدام المسبح المشترك وصالة الرياضة. التفاصيل والأسعار الكاملة قريباً."
+    },
+    features: {
+      en: ["Single-storey detached home","Open-plan living and dining","Separate fitted kitchen","Fully furnished","Large communal swimming pool","Residents' gym","Gated village with parking"],
+      ar: ["منزل مستقل من طابق واحد","صالة معيشة وطعام مفتوحة","مطبخ منفصل مجهز","مفروش بالكامل","مسبح مشترك كبير","صالة رياضة للسكان","مجمع مغلق مع مواقف سيارات"]
+    },
+    cardImage: "v0",
+    gallery: ["v0","v1","v2","v3","v4","v5","v6","v7","v8","v9","v10","v11","v12"],
+    arEnabled: false,
+    arUrl: "",
+    arUrlIos: ""
+  }
+];
+
+/* ========================= COPY / TRANSLATIONS ========================= */
+const T = {
+  en: {
+    brandTop:"BARADA", brandBot:"HOMES", menu:"MENU",
+    navAbout:"About us", navUnits:"Available units", navContact:"Contact",
+    heroH:"Find your place.",
+    heroSub:"Homes to live in. Properties to invest in. Places to belong.",
+    heroCta:"Explore our homes", heroCta2:"Get in touch", viewAr:"View in AR",
+    aboutH:"More than a property.",
+    aboutP:"Barada Homes is a Thailand-focused real estate and property management company built around finding, managing and creating better places to live, stay and invest.",
+    aboutQ:"From finding the right property to managing it day to day, Barada Homes brings property, hospitality and local expertise together under one roof.",
+    p1h:"Find", p1p:"Quality properties in locations with real potential.",
+    p2h:"Manage", p2p:"Professional, hands-on property management.",
+    p3h:"Rent", p3p:"Holiday and long-term rental solutions.",
+    p4h:"Invest", p4p:"Helping clients identify opportunities that make sense.",
+    unitsH:"Available units",
+    unitsP:"Explore our current homes and properties available for rent, stay or investment.",
+    viewProp:"View property", statusLive:"AVAILABLE NOW", statusSoon:"COMING SOON",
+    whyH:"We look after property like it's our own.",
+    whyP:"Good property management is about more than collecting rent. It's about protecting the property, creating better guest experiences, solving problems quickly and making sure every home performs at its potential.",
+    w1h:"Local", w1p:"Based in Thailand, with local relationships and on-the-ground understanding.",
+    w2h:"Hands-on", w2p:"We stay close to the properties we manage.",
+    w3h:"Long-term", w3p:"We build long-term relationships with owners, guests, tenants and partners.",
+    svcH:"What we do",
+    s1:"Property sales", s2:"Property management", s3:"Holiday rentals",
+    s4:"Long-term rentals", s5:"Property investment", s6:"Development", soon:"COMING SOON",
+    rootH:"Rooted in Thailand.",
+    rootP:"Thailand is more than a destination. It's a place people choose to live, build businesses, invest and return to year after year.",
+    rootP2:"Barada Homes exists to connect people with the right properties and opportunities across Thailand.",
+    plc1:"Pattaya", plc2:"Krabi",
+    bandH:"Thailand, open to you.",
+    bandP:"From holiday homes to long-term investments, Barada Homes helps international clients navigate property in Thailand with local expertise and personal service.",
+    ownH:"Have a property?",
+    ownP:"Whether you're looking to rent, sell, manage or maximise the potential of a property in Thailand, let's talk.",
+    ownCta:"Talk to Barada Homes", ownCta2:"List your property",
+    conH:"Let's talk property.",
+    fName:"NAME", fMail:"EMAIL", fPhone:"PHONE", fInt:"I'M INTERESTED IN", fMsg:"MESSAGE",
+    o1:"Buying", o2:"Renting", o3:"Property management", o4:"Investment", o5:"Listing my property", o6:"Other",
+    fSend:"Send enquiry", fNote:"Your enquiry opens in WhatsApp, ready to send.",
+    waShort:"WhatsApp", waLong:"Chat with us on WhatsApp",
+    conNote:"Based in Thailand. We reply in English, Arabic and Thai.",
+    ftrTag:"Real estate & property management", partOf:"Part of Barada Group",
+    ftrLoc:"Pattaya · Krabi · Thailand",
+    dDesc:"Description", dFeat:"Features", dEnq:"Enquire about this property",
+    dArH:"View this property in AR",
+    dArP:"Open the model on your phone and place this property in your own space.",
+    lType:"TYPE", lLoc:"LOCATION", lSize:"SIZE", lBed:"BEDROOMS", lBath:"BATHROOMS", lPrice:"PRICE",
+    tbc:"To be confirmed",
+    title:"Barada Homes | Real Estate & Property Management Thailand",
+    metaDesc:"Barada Homes is a Thailand-focused real estate and property management company. Homes to live in, properties to invest in, places to belong."
+  },
+  ar: {
+    brandTop:"بردى", brandBot:"هومز", menu:"القائمة",
+    navAbout:"من نحن", navUnits:"العقارات المتاحة", navContact:"تواصل معنا",
+    heroH:"اكتشف مكانك.",
+    heroSub:"منازل للعيش، عقارات للاستثمار، وأماكن تشعر بأنها لك.",
+    heroCta:"استكشف منازلنا", heroCta2:"تواصل معنا", viewAr:"عرض بتقنية الواقع المعزز",
+    aboutH:"أكثر من مجرد عقار.",
+    aboutP:"بردى هومز شركة عقارات وإدارة أملاك متخصصة في السوق التايلاندي، قامت على فكرة واحدة: إيجاد أماكن أفضل للعيش والإقامة والاستثمار، وإدارتها كما ينبغي.",
+    aboutQ:"من اختيار العقار المناسب إلى إدارته يوماً بيوم، تجمع بردى هومز بين العقار والضيافة والخبرة المحلية تحت سقف واحد.",
+    p1h:"نختار", p1p:"عقارات مميزة في مواقع تتمتع بإمكانات حقيقية.",
+    p2h:"ندير", p2p:"إدارة احترافية ومتكاملة للعقار.",
+    p3h:"نؤجر", p3p:"حلول للإيجار قصير وطويل الأمد.",
+    p4h:"نستثمر", p4p:"نساعدك على اكتشاف الفرص العقارية المناسبة.",
+    unitsH:"العقارات المتاحة",
+    unitsP:"استكشف منازلنا وعقاراتنا المتاحة للإيجار أو الإقامة أو الاستثمار.",
+    viewProp:"تفاصيل العقار", statusLive:"متاح الآن", statusSoon:"قريباً",
+    whyH:"نعتني بالعقار وكأنه ملكنا.",
+    whyP:"الإدارة الجيدة للعقار لا تقتصر على تحصيل الإيجار، بل تعني الحفاظ على العقار، وتقديم تجربة أفضل للضيوف، ومعالجة المشكلات بسرعة، وضمان أن يحقق كل منزل أفضل عائد ممكن.",
+    w1h:"حضور محلي", w1p:"مقرنا في تايلاند، بعلاقات محلية ومعرفة ميدانية بالسوق.",
+    w2h:"متابعة مباشرة", w2p:"نبقى قريبين من كل عقار ندير شؤونه.",
+    w3h:"علاقات طويلة", w3p:"نبني علاقات طويلة الأمد مع الملاك والضيوف والمستأجرين والشركاء.",
+    svcH:"ماذا نقدم",
+    s1:"بيع العقارات", s2:"إدارة العقارات", s3:"الإيجارات قصيرة الأمد",
+    s4:"الإيجارات طويلة الأمد", s5:"الاستثمار العقاري", s6:"التطوير العقاري", soon:"قريباً",
+    rootH:"جذورنا في تايلاند.",
+    rootP:"تايلاند أكثر من مجرد وجهة سياحية. إنها مكان يختاره الناس للعيش وتأسيس الأعمال والاستثمار، ويعودون إليه عاماً بعد عام.",
+    rootP2:"وُجدت بردى هومز لتربط عملاءها بالعقار المناسب والفرصة المناسبة في مختلف أنحاء تايلاند.",
+    plc1:"باتايا", plc2:"كرابي",
+    bandH:"تايلاند، أقرب إليك.",
+    bandP:"من منازل العطلات إلى الاستثمارات طويلة الأمد، تساعد بردى هومز عملاءها من مختلف الدول على التعامل مع السوق العقاري التايلاندي بخبرة محلية وخدمة شخصية.",
+    ownH:"هل لديك عقار؟",
+    ownP:"سواء كنت ترغب في تأجير عقارك أو بيعه أو إدارته أو زيادة عوائده، دعنا نتحدث.",
+    ownCta:"تواصل مع بردى هومز", ownCta2:"اعرض عقارك معنا",
+    conH:"لنتحدث عن العقارات.",
+    fName:"الاسم", fMail:"البريد الإلكتروني", fPhone:"رقم الهاتف", fInt:"أنا مهتم بـ", fMsg:"رسالتك",
+    o1:"الشراء", o2:"الإيجار", o3:"إدارة العقار", o4:"الاستثمار", o5:"عرض عقاري", o6:"أخرى",
+    fSend:"إرسال الطلب", fNote:"سيفتح طلبك في واتساب جاهزاً للإرسال.",
+    waShort:"واتساب", waLong:"تواصل معنا عبر واتساب",
+    conNote:"مقرنا في تايلاند. نرد عليك بالعربية والإنجليزية والتايلاندية.",
+    ftrTag:"العقارات وإدارة العقارات", partOf:"جزء من مجموعة بردى",
+    ftrLoc:"باتايا · كرابي · تايلاند",
+    dDesc:"الوصف", dFeat:"المواصفات", dEnq:"استفسر عن هذا العقار",
+    dArH:"شاهد العقار بتقنية الواقع المعزز",
+    dArP:"افتح النموذج من هاتفك وشاهد العقار داخل مساحتك الخاصة.",
+    lType:"النوع", lLoc:"الموقع", lSize:"المساحة", lBed:"غرف النوم", lBath:"الحمامات", lPrice:"السعر",
+    tbc:"يحدد لاحقاً",
+    title:"بردى هومز | العقارات وإدارة العقارات في تايلاند",
+    metaDesc:"بردى هومز شركة عقارات وإدارة أملاك في تايلاند. منازل للعيش، عقارات للاستثمار، وأماكن تشعر بأنها لك."
+  }
+};
+
+/* ========================= APP ========================= */
+let lang = "en";
+const $  = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const t  = k => T[lang][k] ?? k;
+
+/* --- links --- */
+const waLink = msg => "https://wa.me/" + SETTINGS.whatsapp + (msg ? "?text=" + encodeURIComponent(msg) : "");
+function wireLinks(){
+  ["#mWa","#cWa","#fWa","#fab"].forEach(s => { const e=$(s); if(e) e.href = waLink(lang==="ar" ? "مرحباً بردى هومز، أود الاستفسار عن عقاراتكم." : "Hi Barada Homes, I'd like to ask about your properties."); });
+  ["#mIg","#cIg","#fIg"].forEach(s => { const e=$(s); if(e) e.href = SETTINGS.instagram; });
+  ["#mMail","#cMail"].forEach(s => { const e=$(s); if(e) e.href = "mailto:" + SETTINGS.email; });
+}
+
+/* --- language --- */
+function setLang(l){
+  lang = l;
+  const rtl = l === "ar";
+  document.documentElement.lang = l;
+  document.documentElement.dir  = rtl ? "rtl" : "ltr";
+  document.title = t("title");
+  const md = document.querySelector('meta[name="description"]'); if(md) md.content = t("metaDesc");
+  $$("[data-i]").forEach(el => { el.textContent = t(el.dataset.i); });
+  $("#btnEN").classList.toggle("on", !rtl);
+  $("#btnAR").classList.toggle("on", rtl);
+  $("#btnEN").setAttribute("aria-pressed", String(!rtl));
+  $("#btnAR").setAttribute("aria-pressed", String(rtl));
+  wireLinks();
+  renderCards();
+  if($("#modal").classList.contains("open")) openProp(currentProp, galIdx);
+  try{ localStorage.setItem("bh-lang", l); }catch(e){}
+}
+$("#btnEN").onclick = () => setLang("en");
+$("#btnAR").onclick = () => setLang("ar");
+
+/* --- menu --- */
+const menu = $("#menu"), burger = $("#burger");
+function toggleMenu(open){
+  menu.classList.toggle("open", open);
+  burger.setAttribute("aria-expanded", String(open));
+  document.body.style.overflow = open ? "hidden" : "";
+}
+burger.onclick = () => toggleMenu(!menu.classList.contains("open"));
+menu.querySelectorAll("a").forEach(a => a.onclick = () => toggleMenu(false));
+document.addEventListener("keydown", e => {
+  if(e.key !== "Escape") return;
+  if(menu.classList.contains("open")) toggleMenu(false);
+  if($("#modal").classList.contains("open")) closeModal();
+});
+
+/* --- hero --- */
+const featured = PROPERTIES.find(p => p.heroOnHomepage) || PROPERTIES[0];
+$("#heroImg").src = IMG[featured.gallery[0]];
+$("#rootedImg").src = IMG["v1"];
+if(featured.arEnabled && featured.arUrl){
+  $("#heroAr").hidden = false;
+  $("#heroAr").onclick = () => launchAr(featured);
+}
+
+/* --- cards --- */
+const caro = $("#caro");
+function specLine(p){
+  const bits = [];
+  if(p.size) bits.push(p.size);
+  if(p.beds) bits.push(`<b>${p.beds}</b> ${lang==="ar"?"غرف نوم":"bed"}`);
+  if(p.baths) bits.push(`<b>${p.baths}</b> ${lang==="ar"?"حمامات":"bath"}`);
+  return bits.length ? bits.map(b => `<span>${b}</span>`).join("") : `<span>${t("tbc")}</span>`;
+}
+function renderCards(){
+  caro.innerHTML = PROPERTIES.map((p,i) => `
+    <article class="card" data-idx="${i}">
+      <div class="card-img">
+        <img src="${IMG[p.cardImage || p.gallery[0]]}" alt="${p.name[lang]}" loading="${i?'lazy':'eager'}">
+        <span class="status ${p.status==='available'?'live':''}">${p.status==='available'?t('statusLive'):t('statusSoon')}</span>
+      </div>
+      <div class="card-body">
+        <div>
+          <h3>${p.name[lang]}</h3>
+          <p class="loc">${p.location[lang]} · ${p.type[lang]}</p>
+        </div>
+        <div class="specs">${specLine(p)}</div>
+        <p style="color:var(--cream-60);font-size:15.5px;max-width:46ch">${p.desc[lang]}</p>
+        <div class="price">${p.price[lang]}<small>${p.priceNote[lang]}</small></div>
+        <div class="card-cta">
+          <button class="btn open-prop" data-idx="${i}">${t("viewProp")}</button>
+          ${p.arEnabled && p.arUrl ? `<button class="btn ghost ar-open" data-idx="${i}"><span class="ar-mark">◎</span> ${t("viewAr")}</button>` : ""}
+        </div>
+      </div>
+    </article>`).join("");
+  $("#cTot").textContent = String(PROPERTIES.length).padStart(2,"0");
+  caro.querySelectorAll(".open-prop").forEach(b => b.onclick = () => openProp(+b.dataset.idx, 0));
+  caro.querySelectorAll(".ar-open").forEach(b => b.onclick = () => launchAr(PROPERTIES[+b.dataset.idx]));
+  updateCount();
+}
+
+/* --- carousel nav (RTL-aware) --- */
+function cardStep(){ const c = caro.querySelectorAll(".card"); if(!c.length) return 400;
+  return c.length > 1 ? Math.abs(c[1].offsetLeft - c[0].offsetLeft) : c[0].offsetWidth; }
+function activeIdx(){ return Math.round(Math.abs(caro.scrollLeft) / cardStep()); }
+function updateCount(){
+  const i = Math.min(activeIdx(), PROPERTIES.length - 1);
+  $("#cIdx").textContent = String(i + 1).padStart(2,"0");
+  $("#prev").disabled = i === 0;
+  $("#next").disabled = i >= PROPERTIES.length - 1;
+}
+function goTo(i){
+  const dir = document.documentElement.dir === "rtl" ? -1 : 1;
+  caro.scrollTo({ left: dir * i * cardStep(), behavior: "smooth" });
+}
+$("#prev").onclick = () => goTo(Math.max(0, activeIdx() - 1));
+$("#next").onclick = () => goTo(Math.min(PROPERTIES.length - 1, activeIdx() + 1));
+caro.addEventListener("scroll", () => { clearTimeout(caro._t); caro._t = setTimeout(updateCount, 90); }, {passive:true});
+
+/* --- property detail --- */
+let currentProp = 0, galIdx = 0;
+function openProp(i, g){
+  currentProp = i; galIdx = g || 0;
+  const p = PROPERTIES[i];
+  $("#mTitle").textContent = p.name[lang];
+  $("#galMain").src = IMG[p.gallery[galIdx]];
+  $("#galMain").alt = p.name[lang];
+  $("#thumbs").innerHTML = p.gallery.map((k,n) =>
+    `<button class="${n===galIdx?'on':''}" data-n="${n}" aria-label="Photo ${n+1}"><img src="${IMG[k]}" alt="" loading="lazy"></button>`).join("");
+  $("#thumbs").querySelectorAll("button").forEach(b => b.onclick = () => {
+    galIdx = +b.dataset.n;
+    $("#galMain").src = IMG[p.gallery[galIdx]];
+    $("#thumbs").querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b));
+  });
+  const row = (label, val) => `<div><dt>${t(label)}</dt><dd>${val || t("tbc")}</dd></div>`;
+  $("#mDl").innerHTML =
+    row("lType", p.type[lang]) + row("lLoc", p.location[lang]) + row("lSize", p.size) +
+    row("lBed", p.bedsLabel ? p.bedsLabel[lang] : (p.beds || null)) +
+    row("lBath", p.baths) + row("lPrice", p.price[lang]);
+  $("#mDesc").textContent = p.desc[lang];
+  $("#mFeat").innerHTML = p.features[lang].map(f => `<li>${f}</li>`).join("");
+  const showAr = p.arEnabled && p.arUrl;
+  $("#mArPanel").hidden = !showAr;
+  if(showAr) $("#mArBtn").onclick = () => launchAr(p);
+  const msg = (lang==="ar" ? "مرحباً بردى هومز، أود الاستفسار عن: " : "Hi Barada Homes, I'd like to ask about: ") + p.name[lang];
+  $("#mWaBtn").href = waLink(msg);
+  $("#mEnq").onclick = () => { closeModal(); $("#fMsg").value = msg; $("#contact").scrollIntoView({behavior:"smooth"}); setTimeout(()=>$("#fName").focus(), 600); };
+  $("#modal").classList.add("open");
+  document.body.style.overflow = "hidden";
+  $("#sheet").scrollTop = 0;
+}
+function closeModal(){ $("#modal").classList.remove("open"); document.body.style.overflow = ""; }
+$$("[data-close]").forEach(e => e.onclick = closeModal);
+
+/* --- AR: real WebAR only. Loads <model-viewer> on demand; never faked. --- */
+let mvLoaded = false;
+function launchAr(p){
+  if(!p.arEnabled || !p.arUrl) return;
+  if(!mvLoaded){
+    const s = document.createElement("script");
+    s.type = "module";
+    s.src = "https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js";
+    document.head.appendChild(s);
+    mvLoaded = true;
+  }
+  let mv = document.getElementById("mv");
+  if(!mv){
+    mv = document.createElement("model-viewer");
+    mv.id = "mv";
+    mv.setAttribute("ar",""); mv.setAttribute("ar-modes","webxr scene-viewer quick-look");
+    mv.setAttribute("camera-controls",""); mv.setAttribute("touch-action","pan-y");
+    mv.style.cssText = "position:fixed;inset:0;z-index:90;width:100%;height:100%;background:#0A211B";
+    const close = document.createElement("button");
+    close.textContent = "✕"; close.className = "x";
+    close.style.cssText = "position:fixed;top:16px;inset-inline-end:16px;z-index:91;background:rgba(10,33,27,.8);color:#F2EADA";
+    close.onclick = () => { mv.remove(); close.remove(); document.body.style.overflow=""; };
+    document.body.append(mv, close);
+  }
+  mv.src = p.arUrl;
+  if(p.arUrlIos) mv.setAttribute("ios-src", p.arUrlIos);
+  document.body.style.overflow = "hidden";
+  mv.addEventListener("load", () => { if(mv.canActivateAR) mv.activateAR(); }, {once:true});
+}
+
+/* --- contact form -> WhatsApp --- */
+$("#send").onclick = () => {
+  const g = id => $(id).value.trim();
+  const sel = $("#fInt"), interest = sel.options[sel.selectedIndex].textContent;
+  if(!g("#fName") || (!g("#fMail") && !g("#fPhone"))){
+    alert(lang==="ar" ? "الرجاء إدخال اسمك وبريدك الإلكتروني أو رقم هاتفك." : "Please add your name and either an email or a phone number.");
+    return;
+  }
+  const L = lang==="ar"
+    ? ["مرحباً بردى هومز،","الاسم: "+g("#fName"), g("#fMail")&&"البريد: "+g("#fMail"), g("#fPhone")&&"الهاتف: "+g("#fPhone"), "مهتم بـ: "+interest, g("#fMsg")&&"الرسالة: "+g("#fMsg")]
+    : ["Hi Barada Homes,","Name: "+g("#fName"), g("#fMail")&&"Email: "+g("#fMail"), g("#fPhone")&&"Phone: "+g("#fPhone"), "Interested in: "+interest, g("#fMsg")&&"Message: "+g("#fMsg")];
+  window.open(waLink(L.filter(Boolean).join("\n")), "_blank");
+};
+$("#listBtn").onclick = () => { $("#fInt").value = "list"; };
+
+/* --- whatsapp fab --- */
+const fab = $("#fab");
+addEventListener("scroll", () => fab.classList.toggle("show", scrollY > innerHeight * .7), {passive:true});
+
+/* --- boot --- */
+$("#yr").textContent = new Date().getFullYear();
+let saved = null; try{ saved = localStorage.getItem("bh-lang"); }catch(e){}
+setLang(saved || ((navigator.language||"").startsWith("ar") ? "ar" : "en"));
+</script>
+</body>
+</html>
